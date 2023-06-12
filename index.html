@@ -41,7 +41,7 @@
               info@devstudio.com</a
             >
             <a href="tel:+48111111111">
-              <svg class="smartphone" width="10px" height="16px">
+              <svg class="close-icon" width="10px" height="16px">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +48 111 111 111</a
@@ -50,8 +50,8 @@
         </section>
       </div>
     </header>
-    
-<!-- MAIN-->
+
+    <!-- MAIN-->
 
     <main>
       <section class="solutions">
@@ -62,9 +62,16 @@
               <span>DLA WASZEGO BIZNESU</span>
             </span>
           </h1>
-          <button type="button" class="order-service">
+          <button type="button" class="order-service" data-modal-open>
             <a href="#">Zamów usługę</a>
           </button>
+          <div class="modal is-hidden" data-modal>
+            <button class="modal-close" data-modal-close>
+              <svg class="socials-icon" width="11px" height="11px">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+          </div>
         </div>
       </section>
       <section>
@@ -520,5 +527,6 @@
         </section>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

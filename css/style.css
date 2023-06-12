@@ -12,9 +12,11 @@
   --header-border: #ececec;
   --color1: #afb1b8;
   --footer-socials-bg: rgba(255, 255, 255, 0.1);
-  --shadow: 2px 0px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
-  --box-shadow: rgba(0, 0, 0, 0.15);
+  --shadow: rgba(0, 0, 0, 0.1);
+  --box-shadow: rgba(0, 0, 0, 0.5);
+  --modal-shadow: rgba(0, 0, 0, 0.2);
+  --modal-shadow2: rgba(0, 0, 0, 0.14);
+  --modal-shadow3: rgba(0, 0, 0, 0.12);
 }
 body {
   font-family: "Roboto", "Arial", "sans-serif";
@@ -468,4 +470,40 @@ a:focus {
   box-shadow: inset 0 0 5x var(--black);
   text-shadow: 1px 1px 1px var(--black);
   box-shadow: 0px 4px 4px 0px var(var(--box-shadow));
+}
+.modal {
+  position: absolute;
+  left: 536px;
+  top: 221px;
+  width: 528px;
+  height: 581px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 1px 1px var(--modal-shadow),
+    0px 1px 1px 0px var(--modal-shadow2), 0px 1px 3px 0px var(--modal-shadow3);
+}
+.modal-close {
+  box-sizing: border-box;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: #ffffff;
+  border: 1px solid var(--shadow);
+  border-radius: 50%;
+  color: var(--black);
+}
+.close-icon {
+  color: var(--black);
+}
+.is-hidden {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-50%) translateY(-50%) scale(0) rotate(0deg)
+    skew(40deg, 40deg);
 }
