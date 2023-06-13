@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="./css/style.css" rel="stylesheet" type="text/css" />
     <title>Zadanie domowe - WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -63,14 +63,8 @@
             </span>
           </h1>
           <button type="button" class="order-service" data-modal-open>
-            <a href="#">Zamów usługę</a>
+            Zamów usługę
           </button>
-          <div class="modal is-hidden" data-modal>
-            <button class="modal-close" data-modal-close>
-              <svg class="socials-icon" width="11px" height="11px">
-                <use href="./images/icons.svg#icon-close"></use>
-              </svg>
-            </button>
           </div>
         </div>
       </section>
@@ -527,6 +521,15 @@
         </section>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close" data-modal-close>
+          <svg class="socials-icon" width="11px" height="11px">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
